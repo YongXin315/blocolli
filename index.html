@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home | Blocolli</title>
+    <link rel="icon" href="logo.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Blocolli</div>
+        <div class="dropdown">
+          <a href="index.html"><button class="dropbtn">Home</button></a>
+          <div class="dropdown-content">
+            <a href="introduction.html">Introduction</a>
+            <a href="testimonial.html">Testimonial</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#product"><button class="dropbtn">Product</button></a>
+          <div class="dropdown-content">
+            <a href="forstudent.html">For Students</a>
+            <a href="forcompanies.html">For Companies</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Community</button>
+          <div class="dropdown-content">
+            <a href="blog.html">Blog</a>
+            <a href="socialmedia.html">Social Media</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">About Us</button>
+          <div class="dropdown-content">
+            <a href="team.html">Team</a>
+            <a href="contactus.html">Contact Us</a>
+          </div>
+        </div>
+
+      <button onclick="document.getElementById('id01').style.display='block'" class="register"><span>Register</span></button>
+
+        <div id="id01" class="modal">
+          <form class="modal-content animate" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="registercontainer">
+              <p class="registernow">Sign Up</p>
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button class="loginbtn" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="registercontainer" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot<a class="registerpsw" href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home content -->
+    <div class="homecontent">
+      <img src="logo.jpeg" class="blocolliimage" alt="blocolli image"/>
+      <div class="fadetext">Blocolli</div>
+      <div class="fadetext1">
+       A blockchain based profile.
+       <br>
+       <br>
+      </div>
+      <button onclick="document.getElementById('id01').style.display='block'" class="registerbutton"><span>Register</span></button>
+    </div>
+
+    <!-- Home bar section -->
+    <div class="homebar">
+      <center>
+        <div class="bar">
+          <p class="percent">8</p>
+          <hr>
+          <p>YEARS IN BUSINESS</p>
+        </div>
+        <div class="bar">
+          <p class="percent">120</p>
+          <hr>
+          <p>PROJECTS DONE</p>
+        </div>
+        <div class="bar">
+          <p class="percent">15</p>
+          <hr>
+          <p>AWARDS WON</p>
+        </div>
+        <div class="bar">
+          <p class="percent">100%</p>
+          <hr>
+          <p>HAPPY CLIENTS</p>
+        </div>
+      </center>
+    </div>
+
+    <!-- Home introduction section -->
+    <div class="homeintroduction">
+      <h1 class="textintroduction">What is Blocolli?</h1>
+      <p class="contentintroduction">Blocolli is a Blockchain solution which help students to create profile
+      consists important information such as attendance, academic results,certificate and etc.</p>
+      <div class="testimonialintroduction">
+        <img src="quotationmark.png" class="quotationmark" alt="quotationmark"/><br>
+        Blocolli is a very good website, all instructions are very clear,
+        both students and lecturers can use it easily.<br><br>
+        <p class="hometestimonialname">Chong Yong Xin</p>
+      </div>
+      <div class="testimonialintroduction">
+        <img src="quotationmark.png" class="quotationmark" alt="quotationmark"/><br>
+        I believe a good website can make students more adaptable and motivated
+        to learn, and Blocolli fits this requirement.<br><br>
+        <p class="hometestimonialname">Chow Wen Jun</p>
+      </div>
+      <div class="testimonialintroduction">
+        <img src="quotationmark.png" class="quotationmark" alt="quotationmark"/><br>
+        It is highly recommended to use the Blocolli, its functions are very
+        complete and neat, and the background color can also relax and eyes.
+        <p class="hometestimonialname">Law Jing Hong</p>
+      </div>
+    </div>
+
+    <!-- Home product section -->
+    <a name="product"></a>
+    <div class="homeproduct">
+      <h1 class="homeproducttitle">Product</h1>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <p class="slidetitle">For Students</p>
+          <q>This product can help students know more about their own learning
+          progress.<br>If students have any questions, they can use Blocolli to
+          understand and get benefits.</q>
+         <br><br>
+         <a href="forstudent.html" class="homeproductbutton">View More</a>
+        </div>
+
+        <div class="mySlides">
+          <p class="slidetitle">For Companies</p>
+          <q>This product can make it easier for companies and students to
+          communicate and understand each other,<br>and find each other's goals,
+          which can bring convenience and benefits.</q>
+          <br><br>
+          <a href="forcompanies.html" class="homeproductbutton">View More</a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace("active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += "active";
+        }
+      </script>
+    </div>
+
+    <!-- Home how section -->
+    <div class="homesetup">
+      <p class="setuptext">How to setup</p>
+      <center>
+      <figure class="setimg">
+        <img src="setup1.png" alt="setup image"/>
+        <figcaption>We will create account for student based on their email and ID</figcaption>
+      </figure>
+      <figure class="setimg">
+        <img src="setup2.png" alt="setup image"/>
+        <figcaption>Student can login from mobile app with their email</figcaption>
+      </figure>
+      <figure class="setimg">
+        <img src="setup3.png" alt="setup image"/>
+        <figcaption>Private Keys will be stored in student's cloud storage</figcaption>
+      </figure>
+      </center>
+    </div>
+
+    <div class="homesetup">
+      <p class="setuptext">How to create award for students</p>
+      <center>
+      <figure class="setimg">
+        <img src="setup4.png" alt="award image"/>
+        <figcaption>Admin upload picture,enter details for award</figcaption>
+      </figure>
+      <figure class="setimg">
+        <img src="setup5.png" alt="award image"/>
+        <figcaption>Admin generates QR code for award redemption</figcaption>
+      </figure>
+      <figure class="setimg">
+        <img src="setup6.png" alt="award image"/>
+        <figcaption>Students claim the award by scanning QR code with our app</figcaption>
+      </figure>
+      </center>
+    </div>
+
+    <div class="homesetup">
+      <p class="setuptext">How to show achievement to employer</p>
+      <center>
+      <figure class="setimg">
+        <img src="setup7.png" alt="achievement image"/>
+        <figcaption>Students generate a link from app that show their achievement</figcaption>
+      </figure>
+      <figure class="setimg">
+        <img src="setup8.png" alt="achievement image"/>
+        <figcaption>Students attach this link to their resume</figcaption>
+      </figure>
+      <figure class="setimg">
+        <img src="setup9.png" alt="achievement image"/>
+        <figcaption>Employer can check student's achievements by clicking on the link</figcaption>
+      </figure>
+      </center>
+    </div>
+
+
+    <footer>
+      <div class="row">
+        <div class="footerlink">
+          <p>Home</p>
+          <p><a href="introduction.html">Introduction</a></p>
+          <p><a href="testimonial.html">Testimonial</a></p>
+        </div>
+        <div class="footerlink">
+          <p>Product</p>
+          <p><a href="forstudent.html">For Students</a></p>
+          <p><a href="forcompanies.html">For Companies</a></p>
+        </div>
+        <div class="footerlink">
+          <p>Community</p>
+          <p><a href="blog.html">Blog</a></p>
+          <p><a href="socialmedia.html">Social Media</a></p>
+        </div>
+        <div class="footerlink">
+          <p>About Us</p>
+          <p><a href="team.html">Team</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="footericon">
+          <a href="https://www.facebook.com/"><img src="facebookicon.png" class="icon" alt="facebook icon"/></a>
+          <a href="https://www.instagram.com/"><img src="igicon.png" class="icon" alt="instagram icon"/></a>
+          <a href="https://twitter.com/"><img src="twittericon.png" class="icon" alt="twitter icon"/></a>
+          <a href="https://www.linkedin.com/"><img src="linkedinicon.png" class="icon" alt="linkedin icon"/></a>
+        </div>
+      </div>
+      <p class="copyright">
+        Blocolli. A blockchain based profile.<br>
+        blocolli &copy; 2022</p>
+    </footer>
+
+  </body>
+</html>

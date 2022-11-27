@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Social Media | Blocolli</title>
+    <link rel="icon" href="logo.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Blocolli</div>
+        <div class="dropdown">
+          <a href="index.html"><button class="dropbtn">Home</button></a>
+          <div class="dropdown-content">
+            <a href="introduction.html">Introduction</a>
+            <a href="testimonial.html">Testimonial</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="index.html#product"><button class="dropbtn">Product</button></a>
+          <div class="dropdown-content">
+            <a href="forstudent.html">For Students</a>
+            <a href="forcompanies.html">For Companies</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Community</button>
+          <div class="dropdown-content">
+            <a href="blog.html">Blog</a>
+            <a href="socialmedia.html">Social Media</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">About Us</button>
+          <div class="dropdown-content">
+            <a href="team.html">Team</a>
+            <a href="contactus.html">Contact Us</a>
+          </div>
+        </div>
+
+        <button onclick="document.getElementById('id01').style.display='block'" class="register"><span>Register</span></button>
+
+        <div id="id01" class="modal">
+          <form class="modal-content animate" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="registercontainer">
+              <p class="registernow">Sign Up</p>
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button class="loginbtn" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="registercontainer" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot<a class="registerpsw" href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="headertext">Let's Connect</h1>
+    <div class="socialmediasection">
+      <!-- facebook  Button -->
+      <a href="http://www.facebook.com" target="blank" class="social-margin">
+        <div class="social-icon facebook">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+      </a>
+
+      <!-- InstagramButton -->
+      <a href="http://instagram.com/" target="blank" class="social-margin">
+        <div class="social-icon twitter">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div>
+      </a>
+
+      <!-- TwitterButton -->
+      <a href="http://twitter.com/" target="blank" class="social-margin">
+        <div class="social-icon twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+      </a>
+
+      <!-- LinkedIn Button -->
+      <a href="https://www.linkedin.com/" target="blank" class="social-margin">
+        <div class="social-icon twitter">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="footerlink">
+          <p>Home</p>
+          <p><a href="introduction.html">Introduction</a></p>
+          <p><a href="testimonial.html">Testimonial</a></p>
+        </div>
+        <div class="footerlink">
+          <p>Product</p>
+          <p><a href="forstudent.html">For Students</a></p>
+          <p><a href="forcompanies.html">For Companies</a></p>
+        </div>
+        <div class="footerlink">
+          <p>Community</p>
+          <p><a href="blog.html">Blog</a></p>
+          <p><a href="socialmedia.html">Social Media</a></p>
+        </div>
+        <div class="footerlink">
+          <p>About Us</p>
+          <p><a href="team.html">Team</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="footericon">
+          <a href="https://www.facebook.com/"><img src="facebookicon.png" class="icon" alt="facebook icon"/></a>
+          <a href="https://www.instagram.com/"><img src="igicon.png" class="icon" alt="instagram icon"/></a>
+          <a href="https://twitter.com/"><img src="twittericon.png" class="icon" alt="twitter icon"/></a>
+          <a href="https://www.linkedin.com/"><img src="linkedinicon.png" class="icon" alt="linkedin icon"/></a>
+        </div>
+      </div>
+      <p class="copyright">
+        Blocolli. A blockchain based profile.<br>
+        blocolli &copy; 2022</p>
+    </footer>
+  </body>
+</html>

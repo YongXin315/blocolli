@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog | Blocolli</title>
+    <link rel="icon" href="logo.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Blocolli</div>
+        <div class="dropdown">
+          <a href="index.html"><button class="dropbtn">Home</button></a>
+          <div class="dropdown-content">
+            <a href="introduction.html">Introduction</a>
+            <a href="testimonial.html">Testimonial</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="index.html#product"><button class="dropbtn">Product</button></a>
+          <div class="dropdown-content">
+            <a href="forstudent.html">For Students</a>
+            <a href="forcompanies.html">For Companies</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Community</button>
+          <div class="dropdown-content">
+            <a href="blog.html">Blog</a>
+            <a href="socialmedia.html">Social Media</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">About Us</button>
+          <div class="dropdown-content">
+            <a href="team.html">Team</a>
+            <a href="contactus.html">Contact Us</a>
+          </div>
+        </div>
+
+        <button onclick="document.getElementById('id01').style.display='block'" class="register"><span>Register</span></button>
+
+        <div id="id01" class="modal">
+          <form class="modal-content animate" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="registercontainer">
+              <p class="registernow">Sign Up</p>
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button class="loginbtn" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="registercontainer" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot<a class="registerpsw" href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="headertext">Blog</h1>
+    <section class="blog">
+      <p class="blogMsia">Malaysia</p>
+      <img src="blogfakecertificate.jpg" alt="fake certificate"/>
+      <h2>Fake Degrees Quite Common In Malaysia, <br>Even High Up The Chain</h2>
+      <hr>
+      <div>
+      <p>
+        Malaysia said to be "one of the worst" countries when it comes
+        to fake education certifications.
+        <span id="dots">...</span><span id="more">
+        <br><br>
+        One in 20 job candidates have fake degrees and other qualifications
+        while one in 10 has credentials from unaccredited institutions,
+        <a href="https://www.thestar.com.my/news/nation/2019/05/06/a-worrying-trend-in-msia/">according to The Star.</a>
+        <br><br>
+        Akhbar & Associates, a Malaysian corporate fraud investigation agency,
+        revealed in 2019 that the background checks on potential new hires for
+        companies found that 5% to 7% of candidates had fake degrees, while
+        10% to 15% have qualifications from unaccredited universities.
+        <br><br>
+        Akhbar & Associates Managing Director Datuk Seri Akhbar Satar explained
+        that these people were applying for Senior Management positions across
+        multiple industries including banking and healthcare.
+        Last year in Pakistan, the CEO of a fake degree ‘mill’ called Axact –
+        which boasted a network of over 370 fake online universities based in
+        the United States and 22 others – was sentenced to
+        <a href="https://www.dawn.com/news/1418156">20 years in jail each by the courts.</a>
+        From the case, Pakistani authorities also found 80 Malaysian names and addresses.
+        It seems thousands of fake degree holders are working as doctors,
+        nurses, teachers and engineers across Southeast Asia.
+        <br><br>
+        Akhbar said Malaysia was “one of the worst” nations plagued with the
+        issue of fake degrees and certification because companies here didn’t
+        do background checks or lodge police reports. This allows false
+        qualification holders to simply face “internal action” before moving
+        on to the next job.
+        <br><br>
+        The Malaysian Medical Council (MMC) and Institution of Engineers (IEM)
+        have already taken steps to ensure that only qualified and properly
+        certified doctors and Engineers can practice their respective trade in Malaysia.
+        Employers are now calling for action to be taken against staff who
+        secured their post with degree mill and fake qualifications.
+        <br><br>
+        Echoing the call for action is Malaysian Employers Federation
+        executive director Datuk Shamsuddin Bardan.However, Malaysian
+        Qualifications Agency (MQA) CEO Datuk Dr Rahmah Mohamed said it is the
+        organization’s responsibility to check the qualifications of their
+        employees were accredited accordingly.
+        <br><br>
+        So, it is still upon the employer to do their due diligence and conduct
+        background checks if they suspect an employee’s qualifications are fake.
+      </span>
+      </p>
+      <button onclick="myFunction(this)" id="myBtn">Read more</button>
+      </div>
+    </section>
+
+    <section class="blog">
+      <p class="blogMsia">Malaysia</p>
+      <img src="blogeduminister.jpg" alt="education minister"/>
+      <h2>Higher Education Minister: <br>1/4 Of Fresh Grads To Struggle In job
+      Hunt Following Covid-19 Impacts</h2>
+      <hr>
+      <div>
+      <p>
+        Higher Education Minister Noraini Ahmad is not optimistic of fresh
+        graduates’ success in job hunting within six months of graduation
+        following the impact of Covid-19.
+        <span id="dots">...</span><span id="more">
+        <br><br>
+        About 75,000 out of 300,000 fresh graduates are projected to face
+        challenges in the job market as the economy struggles to find its footing.
+        <br><br>
+        The Higher Education Ministry also showed that 41,161 graduates still
+        remained unemployed via the Graduate Tracer Study 2019. With an
+        additional projected 75,000 fresh graduates this year, it is estimated
+        that around 116,161 graduates will need additional help to further
+        increase their marketability.
+        <br><br>
+        In her speech at the launch of the minister’s Career Advancement
+        Programme, she noted that a job matching process for unemployed
+        graduates has been implemented in collaboration with the Social
+        Security Organisation (SOCSO) via the MyFutureJobs portal.
+        <br><br>
+        Additionally, the ministry also has multiple schemes to help graduates
+        embark on a career path or entrepreneurial path. They will soon
+        introduce a micro-financing scheme for students to grow and improve
+        their own business together with the National Entrepreneur Group
+        Economic Fund (Tekun Nasional).
+        <br><br>
+        The Graduates Reference Hub for Employment and Training (GREaT) will
+        offer services such as job matching, reskilling, and upskilling
+        programmes, as well as grants for further education and career counselling.
+        <br><br>
+        This career advancement programme is limited time only, and will run
+        from October 16 to Decemeber 31 at 20 selected public universities,
+        polytechnics, and community colleges. Job placements for participants
+        of the programme will begin on January 1 2021.
+      </span>
+      </p>
+      <button onclick="myFunction(this)" id="myBtnTwo">Read more</button>
+      </div>
+    </section>
+
+    <section class="blog">
+      <p class="blogMsia">Malaysia</p>
+      <img src="bloggraduate.jpg" alt="graduate student"/>
+      <h2>HR Deputy Minister Says M'sian<br>Graduates' Lack of Soft Skills &amp;
+      Selective Nature Reasons<br>Why They Fail To Secure Jobs</h2>
+      <hr>
+      <div>
+      <p>
+        The number of unemployed grads have been rising steadily since 2016.
+        <span id="dots">...</span><span id="more">
+        <br><br>
+        Human Resource Deputy Minister Awang Hashim has said that the reasons
+        why Malaysian graduates fail to secure jobs was because of their
+        selective nature and lack of soft skills. He added that besides that,
+        another reason was their failure to obtain information on job
+        vacancies that suited their qualifications.
+        <br><br>
+        "Low qualifications or CGPA also caused employers to be less interested
+        to hire these candidates, besides the mismatch between the candidates’
+        field of study and the job market." Awang Hashim via Malay Mail
+        <br><br>
+        Awang made the statement during the Dewan Negara sitting today in
+        response to Senator Idris Ahmad’s question on the statistics and data
+        from 2015 until July this year on unemployment among graduates with
+        first-degree qualifications.
+        <br><br>
+        Based on statistical data from the 2016 Graduate Statistics Report,
+        Awang said that the unemployment rate among fresh grads were at 4% in
+        2016, 4% in 2017, 3.9% in 2018 and 3.9% in 2019.
+        <br><br>
+        Although the unemployment rate seems to have hardly changed since 2016,
+        the actual number of unemployed graduates has been constantly increasing.
+        In 2016  there were 145,800 unemployed graduates, 154,500 in 2017, then
+        161,300 in 2018, and finally 170,300 in 2019.
+      </span>
+      </p>
+      <button onclick="myFunction(this)" id="myBtnThree">Read more</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="footerlink">
+          <p>Home</p>
+          <p><a href="introduction.html">Introduction</a></p>
+          <p><a href="testimonial.html">Testimonial</a></p>
+        </div>
+        <div class="footerlink">
+          <p>Product</p>
+          <p><a href="forstudent.html">For Students</a></p>
+          <p><a href="forcompanies.html">For Companies</a></p>
+        </div>
+        <div class="footerlink">
+          <p>Community</p>
+          <p><a href="blog.html">Blog</a></p>
+          <p><a href="socialmedia.html">Social Media</a></p>
+        </div>
+        <div class="footerlink">
+          <p>About Us</p>
+          <p><a href="team.html">Team</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="footericon">
+          <a href="https://www.facebook.com/"><img src="facebookicon.png" class="icon" alt="facebook icon"/></a>
+          <a href="https://www.instagram.com/"><img src="igicon.png" class="icon" alt="instagram icon"/></a>
+          <a href="https://twitter.com/"><img src="twittericon.png" class="icon" alt="twitter icon"/></a>
+          <a href="https://www.linkedin.com/"><img src="linkedinicon.png" class="icon" alt="linkedin icon"/></a>
+        </div>
+      </div>
+      <p class="copyright">
+        Blocolli. A blockchain based profile.<br>
+        blocolli &copy; 2022</p>
+    </footer>
+
+  </body>
+</html>
